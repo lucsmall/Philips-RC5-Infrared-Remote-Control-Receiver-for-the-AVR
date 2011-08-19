@@ -1,3 +1,14 @@
 C-code targeted to the ATiny2313 to receive and decode data from infrared 
 remote controls using the Philips RC5 protocol. Based on Atmel's AVR410 
 application note (which included code written in AVR assembler).
+
+Requires external 4MHz crystal with 12-22pF capacitors to ground.
+
+Pins in use:
+------------
+PD6       (11) = input from remote control receiver/demodulator
+PD1/TXD   ( 3) = detected codes are written as serial at 9600 bits per second.
+PA1/XTAL2 ( 4) = crystal 
+PA0/XTAL1 ( 5) = crystal 
+PD2/CKOUT ( 6) = system clock (4MHz) output, if fuse set
+
