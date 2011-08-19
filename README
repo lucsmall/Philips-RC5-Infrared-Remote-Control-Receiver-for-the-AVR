@@ -1,0 +1,3 @@
+C-code targeted to the ATiny2313 to receive and decode data from infrared 
+remote controls using the Philips RC5 protocol. Based on Atmel's AVR410 
+application note (which included code written in AVR assembler).
